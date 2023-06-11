@@ -16,4 +16,7 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.get('/', "ArticleController.index");
+Route.get('/articles', "ArticleController.index");
+Route.get('/categories', "CategoryController.index");
+Route.get('/category/:categoryID', "CategoryController.getCategoryArticles");
+Route.get('/article/:articleID', "ArticleController.getArticle");

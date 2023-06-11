@@ -4,7 +4,7 @@
     <h1>{{subTitle}}</h1>
     <ul class="list-group">
         @each(item in postData)
-        <a href="/article/${item.id}"><li class="list-group-item mb-3 shadow">{{item.title}}</li></a>
+        <a href="/category/${item.id}"><li class="list-group-item mb-3 shadow">{{item.name}}</li></a>
         @endeach
     </ul>
 @endsection
